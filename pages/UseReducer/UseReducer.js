@@ -46,7 +46,7 @@ const UseReducers = () => {
   return (
     <Flex>
       <Sidebar />
-      <Flex mt="10%" display="-ms-grid" textAlign="center">
+      <Flex mt="5%" display="-ms-grid" textAlign="center">
         <Text fontSize="50px">UseReducer</Text>
         <Text margin="auto" width="40%">
           Es similar a `useState` pero más escalable, además trabaja de manera

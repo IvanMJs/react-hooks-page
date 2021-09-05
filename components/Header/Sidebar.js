@@ -4,21 +4,15 @@ import {
   Text,
   IconButton,
   Divider,
-  Avatar,
+  Icon,
   Heading,
 } from "@chakra-ui/react";
-import {
-  FiMenu,
-  FiHome,
-  FiCalendar,
-  FiUser,
-  FiDollarSign,
-  FiBriefcase,
-  FiSettings,
-} from "react-icons/fi";
-import { IoPawOutline } from "react-icons/io5";
+import { FiMenu, FiHome, FiCalendar, FiUser } from "react-icons/fi";
+import { DiReact, DiGithubBadge } from "react-icons/di";
+import { FaHornbill, FaBrain } from "react-icons/fa";
+import { GiCandlebright } from "react-icons/gi";
+import { AiOutlineExperiment } from "react-icons/ai";
 import NavItem from "./NavItem.js";
-import Logo from "../../public/avatar-1.jpg"
 
 export default function Sidebar() {
   const [navSize, changeNavSize] = useState("large");
@@ -29,9 +23,9 @@ export default function Sidebar() {
       left="5"
       h="95vh"
       marginTop="2.5vh"
-      boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
+      boxShadow="0 4px 50px 0 rgba(0, 0, 0, 0.05)"
       borderRadius={navSize == "small" ? "15px" : "30px"}
-      w={navSize == "small" ? "75px" : "200px"}
+      w={navSize == "small" ? "75px" : "400px"}
       flexDir="column"
       justifyContent="space-between"
     >
@@ -52,38 +46,45 @@ export default function Sidebar() {
             else changeNavSize("small");
           }}
         />
-
         <NavItem
           navSize={navSize}
           icon={FiHome}
+          title="Home"
+          href="/"
+        ></NavItem>
+        <NavItem
+          navSize={navSize}
+          icon={AiOutlineExperiment}
           title="UseState"
           href="/UseState/UseState"
         ></NavItem>
 
         <NavItem
           navSize={navSize}
-          icon={FiCalendar}
+          icon={FaHornbill}
           title="UseEffects"
           href="/UseEffects/UseEffects"
           active
         ></NavItem>
         <NavItem
           navSize={navSize}
-          icon={FiUser}
+          icon={FaBrain}
           title="UseMemo"
           href="/UseMemo/UseMemo"
         ></NavItem>
         <NavItem
           navSize={navSize}
-          icon={IoPawOutline}
+          icon={GiCandlebright}
           title="UseReducer"
           href="/UseReducer/UseReducer"
         ></NavItem>
-        {/* <NavItem navSize={navSize} icon={FiDollarSign} title="Stocks" ></NavItem>
-        <NavItem navSize={navSize} icon={FiBriefcase} title="Reports" ></NavItem>
-        <NavItem navSize={navSize} icon={FiSettings} title="Settings" ></NavItem> */}
+        <NavItem
+          navSize={navSize}
+          icon={DiGithubBadge}
+          title="Github"
+          href="https://github.com/IvanMJs/react-hooks-page"
+        ></NavItem>
       </Flex>
-
       <Flex
         p="5%"
         flexDir="column"
@@ -93,7 +94,7 @@ export default function Sidebar() {
       >
         <Divider display={navSize == "small" ? "none" : "flex"} />
         <Flex mt={4} align="center">
-          <Avatar size="sm" src={Logo} />
+          <DiReact size={40} />
           <Flex
             flexDir="column"
             ml={4}
