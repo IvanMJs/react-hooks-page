@@ -1,0 +1,17 @@
+{
+	"Stateless component": {
+		
+		"prefix": "reactfunc",
+		"body": [
+			"import React from \"react\";",
+			"export default function ${1:Example}({}) {",
+				"return (",
+				  "<div>{`<${1:Example} /> `}</div>",
+				" );",
+			  " }",
+			  "",
+			  
+		],
+		"description": "Stateless component"
+	}
+}

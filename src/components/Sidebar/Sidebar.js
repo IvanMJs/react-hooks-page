@@ -12,6 +12,7 @@ import { DiReact, DiGithubBadge } from "react-icons/di";
 import { FaHornbill, FaBrain } from "react-icons/fa";
 import { GiCandlebright } from "react-icons/gi";
 import { AiOutlineExperiment } from "react-icons/ai";
+import { SiRedux } from "react-icons/si";
 import NavItem from "./NavItem.js";
 
 export default function Sidebar() {
@@ -50,7 +51,7 @@ export default function Sidebar() {
           navSize={navSize}
           icon={FiHome}
           title="Home"
-          href="/"
+          href="/Home/home"
         ></NavItem>
         <NavItem
           navSize={navSize}
@@ -77,6 +78,12 @@ export default function Sidebar() {
           icon={GiCandlebright}
           title="UseReducer"
           href="/UseReducer/UseReducer"
+        ></NavItem>
+        <NavItem
+          navSize={navSize}
+          icon={SiRedux}
+          title="Redux"
+          href="/Redux/Redux"
         ></NavItem>
         <NavItem
           navSize={navSize}

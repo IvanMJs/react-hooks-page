@@ -1,7 +1,7 @@
 import { Button, Flex, Text, Stack } from "@chakra-ui/react";
 import React, { useState } from "react";
-import ProductSimple from "../../components/Card";
-import Sidebar from "../../components/Header/Sidebar";
+import ProductSimple from "../../components/cards/Card";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 const UseStateHook = () => {
 

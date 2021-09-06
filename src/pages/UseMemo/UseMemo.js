@@ -10,7 +10,7 @@ import {
   Th,
   Td,
 } from "@chakra-ui/react";
-import Sidebar from "../../components/Header/Sidebar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 const UseMemoHook = () => {
   const [characters, setCharacters] = useState([]);
@@ -43,9 +43,15 @@ const UseMemoHook = () => {
     <Flex>
       <Sidebar />
       <Flex mt="5%" display="-ms-grid" textAlign="center">
-        <Text fontSize="50px">UseMemo</Text>
-        <Flex>
-          <Text margin="auto" width="40%">
+        <Text
+          fontFamily="sans-serif"
+          fontSize="72px"
+          color="linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(149,18,18,1) 94%)"
+        >
+          UseMemo
+        </Text>
+        <Flex display="grid" mt="10%">
+          <Text color="linkedin.600" fontSize="3xl" margin="auto" width="80%">
             Este hook nos permitirá usar la **memoización** de forma simple, nos
             permite almacenar los resultados de una función. En caso de enviar
             argumentos que hayamos usado con anterioridad, no se harán los
