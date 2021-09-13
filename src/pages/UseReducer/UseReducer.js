@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useReducer } from "react";
-import { Button, Flex, Stack, Text } from "@chakra-ui/react";
+import { Button, Flex, Stack, Text, Heading } from "@chakra-ui/react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 const initialState = {
@@ -47,15 +47,11 @@ const UseReducers = () => {
     <Flex>
       <Sidebar />
       <Flex mt="5%" display="-ms-grid" textAlign="center">
-        <Text
-          fontFamily="sans-serif"
-          fontSize="72px"
-          color="linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(149,18,18,1) 94%)"
-        >
+        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
           UseReducer
-        </Text>
+        </Heading>
         <Flex display="grid" mt="10%">
-          <Text color="linkedin.600" fontSize="3xl" margin="auto" width="80%">
+          <Text fontSize="3xl" margin="auto" width="80%">
             Es similar a `useState` pero más escalable, además trabaja de manera
             muy similar a como lo hace **Redux**. Al igual que en **Redux**
             necesitamos crear un **initialState**, un **reducer** y un
@@ -80,7 +76,12 @@ const UseReducers = () => {
           </Flex>
           {characters
             .map((character) => (
-              <Flex display="-ms-grid" textAlign="center" key={character.id}>
+              <Flex
+                marginBottom="10%"
+                display="-ms-grid"
+                textAlign="center"
+                key={character.id}
+              >
                 <Stack
                   mt="5%"
                   spacing={4}

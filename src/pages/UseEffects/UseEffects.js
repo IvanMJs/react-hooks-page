@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, useEffect } from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Heading } from "@chakra-ui/react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 
 const UseEffects = () => {
@@ -22,15 +22,11 @@ const UseEffects = () => {
     <Flex>
       <Sidebar />
       <Flex display="-ms-grid" textAlign="center" mt="5%">
-        <Text
-          fontFamily="sans-serif"
-          fontSize="72px"
-          color="linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(149,18,18,1) 94%)"
-        >
+        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
           UseEffect
-        </Text>
+        </Heading>
         <Flex display="grid" mt="10%">
-          <Text color="linkedin.600" fontSize="3xl" margin="auto" width="80%">
+          <Text fontSize="3xl" margin="auto" width="80%">
             {" "}
             Dentro de nuestro useEffect haremos fetch de la API de Rick y Morty,
             para sacar los personajes. Esto en las clases se podría hacer en el

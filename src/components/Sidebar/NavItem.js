@@ -40,7 +40,7 @@ export default function NavItem({
               <Icon
                 as={icon}
                 fontSize="xl"
-                color={active ? "#82AAAD" : "gray.500"}
+                color={active ? "blue.700" : "red.700"}
               />
               <Text ml={5} display={navSize == "small" ? "none" : "flex"}>
                 {title}

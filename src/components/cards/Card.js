@@ -5,7 +5,6 @@ import {
   Center,
   useColorModeValue,
   Heading,
-  Text,
   Stack,
   Image,
   Button,

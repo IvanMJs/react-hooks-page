@@ -7,7 +7,7 @@ import {
   Icon,
   Heading,
 } from "@chakra-ui/react";
-import { FiMenu, FiHome, FiCalendar, FiUser } from "react-icons/fi";
+import { FiMenu, FiHome } from "react-icons/fi";
 import { DiReact, DiGithubBadge } from "react-icons/di";
 import { FaHornbill, FaBrain } from "react-icons/fa";
 import { GiCandlebright } from "react-icons/gi";
@@ -31,22 +31,24 @@ export default function Sidebar() {
       justifyContent="space-between"
     >
       <Flex
-        p="5%"
         flexDir="column"
         w="100%"
-        alignItems={navSize == "small" ? "center" : "flex-start"}
+        e="100%"
+        display={navSize == "small" ? "block" : "flex-start"}
         as="nav"
       >
         <IconButton
+          display={navSize == "small" ? "block" : ""}
           background="none"
           mt={5}
           _hover={{ background: "none" }}
-          icon={<FiMenu />}
           onClick={() => {
             if (navSize == "small") changeNavSize("large");
             else changeNavSize("small");
           }}
+          icon={<FiMenu />}
         />
+
         <NavItem
           navSize={navSize}
           icon={FiHome}
@@ -65,7 +67,6 @@ export default function Sidebar() {
           icon={FaHornbill}
           title="UseEffects"
           href="/UseEffects/UseEffects"
-          active
         ></NavItem>
         <NavItem
           navSize={navSize}
