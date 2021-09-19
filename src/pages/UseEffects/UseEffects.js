@@ -26,7 +26,6 @@ const UseEffects = () => {
         <Title title="UseEffect"></Title>
         <Flex display="grid" mt="10%">
           <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
-            {" "}
             Dentro de nuestro useEffect haremos fetch de la API de Rick y Morty,
             para sacar los personajes. Esto en las clases se podría hacer en el
             método componentWillMount o componentDidMount. En este caso traemos
