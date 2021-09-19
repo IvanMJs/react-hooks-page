@@ -104,6 +104,7 @@ export default function Sidebar() {
         <Flex mt={4} align="center">
           <DiReact size={40} />
           <Flex
+            color="#FFFFFF"
             flexDir="column"
             ml={4}
             display={navSize == "small" ? "none" : "flex"}

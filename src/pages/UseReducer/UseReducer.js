@@ -51,7 +51,7 @@ const UseReducers = () => {
           UseReducer
         </Heading>
         <Flex display="grid" mt="10%">
-          <Text fontSize="3xl" margin="auto" width="80%">
+          <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Es similar a `useState` pero más escalable, además trabaja de manera
             muy similar a como lo hace **Redux**. Al igual que en **Redux**
             necesitamos crear un **initialState**, un **reducer** y un

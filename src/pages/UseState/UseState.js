@@ -27,7 +27,7 @@ const UseStateHook = () => {
           UseState
         </Heading>
         <Flex mt="10%">
-          <Text fontSize="3xl" margin="auto" width="80%">
+          <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Estr hook nos permite manejar estado dentro de un Componente
             Funcional, es quizás uno de los hooks más usados. Además es fácil de
             usar, desectructuramos 2 elementos de useState, el nombre-del-estado

@@ -48,7 +48,7 @@ const UseMemoHook = () => {
           UseMemo
         </Heading>
         <Flex display="grid" mt="10%">
-          <Text fontSize="3xl" margin="auto" width="80%">
+          <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Este hook nos permitirá usar la **memoización** de forma simple, nos
             permite almacenar los resultados de una función. En caso de enviar
             argumentos que hayamos usado con anterioridad, no se harán los
@@ -63,6 +63,7 @@ const UseMemoHook = () => {
         <Flex mt="10%" display="grid">
           <Text>Buscador</Text>
           <Input
+            color="#FFFFFF"
             margin="auto"
             maxWidth="80"
             textAlign="center"
@@ -85,6 +86,7 @@ const UseMemoHook = () => {
           marginBottom="10%"
         >
           <Table
+            color="#FFFFFF"
             overflow="scroll"
             type="whiteAlpha"
             colorScheme="whiteAlpha"
