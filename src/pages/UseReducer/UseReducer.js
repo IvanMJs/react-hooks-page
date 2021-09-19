@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useReducer } from "react";
 import { Button, Flex, Stack, Text, Heading } from "@chakra-ui/react";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Title from "../../components/title/Title";
 
 const initialState = {
   favorites: [],
@@ -47,9 +48,7 @@ const UseReducers = () => {
     <Flex>
       <Sidebar />
       <Flex mt="5%" display="-ms-grid" textAlign="center">
-        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
-          UseReducer
-        </Heading>
+        <Title title="UseReducer"></Title>
         <Flex display="grid" mt="10%">
           <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Es similar a `useState` pero más escalable, además trabaja de manera

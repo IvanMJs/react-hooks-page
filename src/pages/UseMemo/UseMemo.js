@@ -12,6 +12,7 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Title from "../../components/title/Title";
 
 const UseMemoHook = () => {
   const [characters, setCharacters] = useState([]);
@@ -44,9 +45,7 @@ const UseMemoHook = () => {
     <Flex>
       <Sidebar />
       <Flex mt="5%" display="-ms-grid" textAlign="center">
-        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
-          UseMemo
-        </Heading>
+        <Title title="UseMemo"></Title>
         <Flex display="grid" mt="10%">
           <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Este hook nos permitirá usar la **memoización** de forma simple, nos

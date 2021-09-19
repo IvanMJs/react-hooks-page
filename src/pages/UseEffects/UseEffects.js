@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Flex, Text, Heading } from "@chakra-ui/react";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Title from "../../components/title/Title";
 
 const UseEffects = () => {
   const [characters, setCharacters] = useState([]);
@@ -22,9 +23,7 @@ const UseEffects = () => {
     <Flex>
       <Sidebar />
       <Flex display="-ms-grid" textAlign="center" mt="5%">
-        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
-          UseEffect
-        </Heading>
+        <Title title="UseEffect"></Title>
         <Flex display="grid" mt="10%">
           <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             {" "}

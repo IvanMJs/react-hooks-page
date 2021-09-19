@@ -1,31 +1,19 @@
-import { Button, Flex, Text, Heading } from "@chakra-ui/react";
-import React, { useState } from "react";
-import ProductSimple from "../../components/cards/Card";
+import { Flex, Text} from "@chakra-ui/react";
+import React from "react";
+import CounterUseState from "../../components/cards/CounterUseState";
 import Sidebar from "../../components/Sidebar/Sidebar";
+import Title from "../../components/title/Title";
+
 
 const UseStateHook = () => {
-  /**
-   Usamos count y setCount inicializado en 0 y en el onclick
-   lo vamos seteando al count para que sume o reste
-  */
-  // const [darkMode, setDarkMode] = useState(false);
-
-  // const { colorMode, toggleColorMode } = useColorMode();
-
-  // };
-
   return (
     <Flex>
       <Sidebar />
       <Flex mt="5%" display="-ms-grid" textAlign="center">
-        <Heading
-          
-          fontSize="70px"
-          fontFamily="Ink Free"
-          color="#FFFFFF"
-        >
-          UseState
-        </Heading>
+        <Title
+        title="UseState"
+        >       
+        </Title>
         <Flex mt="10%">
           <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
             Estr hook nos permite manejar estado dentro de un Componente
@@ -35,7 +23,7 @@ const UseStateHook = () => {
             valor inicial del estado que hemos declarado.
           </Text>
         </Flex>
-        <ProductSimple />
+        <CounterUseState />
       </Flex>
     </Flex>
   );

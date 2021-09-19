@@ -1,14 +1,13 @@
 import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { Flex, Text, Heading } from "@chakra-ui/react";
+import Title from "../../components/title/Title";
 export default function Example({}) {
   return (
     <Flex>
       <Sidebar />
       <Flex display="-ms-grid" textAlign="center" mt="5%">
-        <Heading fontSize="70px" fontFamily="Ink Free" color="#FFFFFF">
-          Home
-        </Heading>
+        <Title title="Home"></Title>
         <Text fontSize="3xl" margin="auto" width="80%" color="#FFFFFF">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry standard dummy text ever
